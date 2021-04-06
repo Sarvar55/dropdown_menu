@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul li a {
+    background-color: #2f3630;
+    color: #ffff;
+    
+}
+ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+
+}
+li a{
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    font-size: 21px;
+    transition: all 1s ease-in;
+
+}
+li a:hover{
+    background-color:#19c589;
+    color: black;
+transform: scale(6deg);
+}
+ li ul li{
+    display: block;
+    float: none;
+}
+ul li:hover li a{   
+    background-color: #f2f2f2;
+    color: black;
+
+}
+li:hover li a:hover{
+    background-color: #19c589;
+}
+li ul{
+display: none;
+float: none;
+}
+ul li a:hover + ul,ul:hover{
+    display: block;
+}
